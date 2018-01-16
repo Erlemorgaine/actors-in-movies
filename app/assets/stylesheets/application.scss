@@ -1,2 +1,61 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: Black;
+}
+
+
+.login-scr {
+  display: flex;
+  flex: 1;
+  padding: 0px;
+  margin: 0px;
+  @media (min-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.alert {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.notice {
+  margin: 0px;
+}
+
+.login-img {
+  margin-right: 40px;
+  margin-top: 60px;
+  padding-top: 100px;
+  padding-bottom: 180px;
+  background-image: url("darth-vader.jpg");
+  background-repeat: no-repeat;
+}
+/*
+.home-img {
+  background-image: url("la-vita-e-bella.jpg");
+  background-repeat: no-repeat;
+}
+*/
+.login-slogan {
+  color: Black;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: Black;
+  border-color: Silver;
+}
+
+.btn-danger {
+  background-color: Black;
+  border-color: Silver;
+}
+
+.form-group {
+  color: White;
+}
