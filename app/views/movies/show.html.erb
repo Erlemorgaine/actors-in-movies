@@ -1,0 +1,21 @@
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= @movie.name %></div>
+
+  <div class="panel-body">
+
+    <div class="show-image"><%= image_tag(@movie.image_url, size: "32*32") %></div>
+
+    <br><br>
+
+    <p>Year: <%= @movie.year %></p>
+    <p>Director: <%#= @movie.director %></p>
+    <h4>Actors</h4>
+    <p><%#= @movie.actor %></p>
+    <!-- <ul class="amenities">
+    </ul> -->
+
+  </div>
+
+</div>
+<%= link_to "Back", movies_path, class: "btn btn-default" %>
+<%= link_to "Update", edit_movie_path(@movie), class: "btn btn-default" %>

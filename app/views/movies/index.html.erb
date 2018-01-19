@@ -15,11 +15,7 @@
         <% @movies.each do |movie| %>
         <div class="row">
           <div class="col-md-7">
-            <h4><%= movie.name %></h4>
-          </div>
-          <div class="col-md-3 right">
-            <%= link_to "View", movie, class: "btn btn-default" %>
-            <%= link_to "Update", edit_movie_path(movie), class: "btn btn-default" %>
+            <h4><%= link_to movie.name, movie_path(movie.id) %></h4>
           </div>
         </div>
         <% end %>
